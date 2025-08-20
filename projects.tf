@@ -17,7 +17,3 @@ resource "vault_identity_group_alias" "tfe_project_app1" {
   mount_accessor = vault_jwt_auth_backend.tfc.accessor
   canonical_id   = vault_identity_group.tfe_project_app1.id
 }
-import {
-  id = "b9296e95-1c88-5f32-ade0-3d4e7ced9687"
-  to = vault_identity_entity_alias.workspace_app1_dev
-}
